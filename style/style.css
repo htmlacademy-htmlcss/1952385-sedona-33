@@ -13,46 +13,29 @@
   font-display: swap;
 }
 /* Body------------------------------------------------------------------------------------------------------------ */
+
 body {
  font-family:"PT Sans", sans-serif;
  font-size: 18px;
  line-height: 24px;
- background-color: #FFFFFF;
+ background-color: #E5E5E5;
+ color: black;
 }
-.visually-hidden{
-  display: block;
-  }
+
+.visually-hidden {
+  visibility: hidden;
+}
+
 
 /* index.html--------------------------------------------------------------------------------------------------------- */
 
 /*  ------------------------------------------------------------------------heder---------------------------------------*/
 
 .logo-Sedona {
-width: 139px;
-height: 70px;
+  float: left;
 }
 
 .page-heder {
-  font-family: "PT Sans", sans-serif;
-  font-size: 20px;
-  line-height: 26px;
-  font-weight: bold;
-  text-align: center;
-  background-color: #FFFFFF;
-  text-decoration: none;
-  color: #000000;
-}
-.navigation-menu {
-  font-family: "PT Sans", sans-serif;
-  font-size: 20px;
-  line-height: 26px;
-  font-weight: bold;
-  text-align: center;
-  background-color: #FFFFFF;
-  text-decoration: none;
-  color: #000000;
- }
-.navigation-list-right {
   font-family: "PT Sans", sans-serif;
   font-size: 20px;
   line-height: 26px;
@@ -95,6 +78,7 @@ height: 70px;
   background-color: #756257;
   text-decoration: none;
   text-transform: uppercase;
+  border-radius: 5px;
 }
 
 /* ---------------------------------------------------------------------------main-----------------------*/
@@ -105,6 +89,11 @@ height: 70px;
   background-color: #FFFFFF;
   background-size: 100% auto;
   background-repeat: no-repeat;
+}
+
+.hight-images {
+  width: 1200px;
+  height: 500px;
 }
 
 /*-----------------------------------------images-------------------*/
@@ -123,7 +112,7 @@ height: 70px;
   position: relative;
 }
 .bottom-main-page-background {
-  top: -64px;
+  top: -63px;
 
 }
 .welcome-text {
@@ -132,45 +121,476 @@ height: 70px;
 }
 
 /*-----------------h2------------*/
-.description-title-causes {
-  text-align: center;
-  font-family: "PT Sans", sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 30px;
-  text-transform: uppercase;
 
+.description-title-causes {
+  font-family: "PT Sans", sans-serif;
+  color: #000000;
+  font-size: 30px;
+  font-weight: 700;
+  font-style: normal;
+  text-transform: uppercase;
+  line-height: 36px;
+  text-align: center;
 }
 
 .description-text-causes {
   font-family: "PT Sans", sans-serif;
-  font-style: normal;
-  font-weight: 400;
   font-size: 22px;
+  font-weight: 400;
+  font-style: normal;
+  text-transform: none;
+  line-height: 36px;
   text-align: center;
 }
 
-
 /*------------------------h3-----------*/
+
 .advantages {
   text-align: center;
+  color: #000000;
 }
 
 .advantages-title {
   font-family: "PT Sans", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
   font-style: normal;
-  font-weight: bold;
-  font-size: 18px;
+  text-transform: uppercase;
+  line-height: 28px;
   text-align: center;
+}
+.facts {
+  color: white;
+  background-color: #83B3D3;
+  height: 384px;
+  width: 400;
+}
+
+
+.description-text-own-life {
+font-family: "PT Sans", sans-serif;
+font-size: 18px;
+font-weight: normal;
+font-style: normal;
+line-height: 21px;
+text-align: center;
+}
+
+.town {
+  width: 800px;
+  height: 384px;
+  top: 832px;
+  left: 440px;
+}
+
+.clips {
+  background-color: rgba(131, 179, 211, 0.12);
+  }
+
+.description-text-recommend {
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 21px;
+  text-align: center;
+}
+.description-text-burger {
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 21px;
+  text-align: center;
+}
+
+.description-text-souvenirs {
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 21px;
+  text-align: center;
+}
+.canyon {
+  width: 800px;
+  height: 384px;
+  top: 1600px;
+  left: 40px;
+}
+
+.clip-road {
+  background-color: rgba(131, 179, 211, 0.2);
+}
+
+.hotel-search {
+  background-color: rgba(255, 255, 255, 1);
+  ;
+}
+
+.got-interesred {
+font-size: 30px;
+font-weight: 700;
+font-style: normal;
+text-transform: uppercase;
+line-height: 36px;
+text-align: center;
+}
+.description-text-best-deals {
+  font-size: 22px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 26px;
+  text-align: center;
+}
+.search-hotel-item-button {
+  background-color: rgba(117, 98, 87, 1);
+  color: rgba(255, 255, 255, 1);
+  font-family: "PT Sans" no-serif;
+  font-size: 20px;
+  font-weight: bold;
+  font-style: normal;
+  text-transform: uppercase;
+  text-decoration: none;
+  line-height: 36px;
+  text-align: center;
+}
+
+.section-mailing {
+  background-color: blue;
+  color: white;
+  font-size: 30px;
+  font-weight: 700;
+  font-style: normal;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 36px;
+}
+
+.description-text-no-spam {
+  font-weight: 400;
+  text-align: center;
+  font-size: 22px;
+  font-style: normal;
+  line-height: 26px;
+  color: white;
+  background-color: blue;
+}
+
+
+.newsletter-form{
+  background-color: blue;
+}
+.newsletter-email {
+  color: rgba(0, 0, 0, 1);
+}
+.field {
+background-color: rgba(242, 242, 242, 1);
+height: 60px;
+width: 600px;
+}
+.button-newsletter-button {
+  background-color: rgba(131, 179, 211, 1);
+  height: 60px;
+  width: 200px;
+}
+.subscribe {
+  font-family: "PT Sans" sen-serif;
+  color: rgba(255, 255, 255, 1);
+  font-size: 20px;
+  font-weight: 700;
+  font-style: normal;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 26px;
+}
+
+/*-------------------------*/
+
+/*--------footer-------*/
+
+.page-footer {
+  background-color: rgba(255, 255, 255, 1);
+}
+.page-footer a {
+text-decoration: none;
+  color: black;
+}
+.contacts-phone {
+  line-height: 40px;
+  font-size: 40px;
+  font-weight: 400;
+  font-style: normal;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.footer-contacts-logo {
+  width: 114px;
+  height: 32px;
+}
+
+
+/*-----------catalog-----------------------*/
+
+.subscribe-to-the-newsletter {
+background-color: rgba(255, 255, 255, 1);
+}
+
+.main-inner {
+  background-color: rgb(51, 53, 48);
+}
+.inner-header {
+  color: rgba(255, 255, 255, 1);
+}
+.inner-header-title {
+  text-align: left;
+  line-height: 78px;
+  font-size: 60px;
+  font-weight: 700;
+  font-style: normal;
+  text-transform: inherit;
+}
+.breadcrumbs-item a {
+  text-decoration: none;
+}
+.breadcrumbs-link {
+  width: 12px;
+  height: 11px;
+}
+.arrow-main-inner {
+  width: 5px;
+  height: 7px;
+}
+.breadcrumbs-link-hotels {
+font-family: "PT Sans", sans-serif;
+font-weight: 400;
+font-style: Regular;
+line-height: 21px;
+text-align: left;
+}
+.catalog-filter-title {
+font-family: "PT Sans", sans-serif;
+font-weight: 700;
+font-size: 20px;
+font-style: normal;
+line-height: 26px;
+text-align: left;
+vertical-align: top;
+}
+.control-input {
+font-family: "PT Sans", sans-serif;
+font-weight: 400;
+font-style: normal;
+line-height: 23px;
+font-size: 18px;
+text-align: left;
+vertical-align: top;
+}
+.button-apply {
+  background-color: rgba(131, 179, 211, 1);
+  color: rgba(255, 255, 255, 1);
+  height: 60px;
+  width: 200px;
+
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 20px;
+  font-size: 16px;
+  text-align: center;
+  vertical-align: center;
   text-transform: uppercase;
 }
 
-
-.advantages-item {
+.button-reset {
+font-family: "PT Sans", sans-serif;
+font-weight: 400;
+font-style: Regular;
+line-height: 23px;
+text-align: center;
+font-size: 18px;
+vertical-align: top;
+}
+.sorting-catalog-main {
+  color:rgba(0, 0, 0, 1);
+  background-color: rgba(255, 255, 255, 1) ;
   font-family: "PT Sans", sans-serif;
+}
+.hotels-found {
+  font-size: 30px;
+  font-weight: 700;
   font-style: normal;
-  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 39px;
+  text-align: left;
+}
+.sorting-catalog-cheap {
   font-size: 18px;
+  font-weight: 400;
+  font-style: regular;
+  line-height: 23px;
+  text-align: left;
+  vertical-align: top;
+}
+.element-directory {
+background-color:rgba(255, 255, 255, 1);
+font-family: "PT Sans", sans-serif;
+text-decoration: none;
+}
+.product-card a {
+  text-decoration: none;
+}
+.product {
+  width: 300;
+  height: 206;
+}
+.product-card-title {
+  color: rgba(0, 0, 0, 1);
+  font-size: 24px;
+  font-weight: 700;
+  font-style: normal;
+  text-align: left;
+}
+.product-card-text {
+  color: rgba(51, 51, 51, 1);
+  font-size: 18px;
+  font-weight: 400;
+  font-style: normal;
+  text-align: left;
+  line-height: 23px;
+}
+.product-card-price {
+  color: rgba(51, 51, 51, 1);
+  font-size: 18px;
+  font-weight: 400;
+  font-style: normal;
+  text-align: left;
+  line-height: 23px ;
+}
+.product-card-button {
+  color:rgba(255, 255, 255, 1);
+  font-size: 16px;
+  font-weight: 700;
+  font-style: normal;
   text-align: center;
+  line-height: 21px
+}
+.more {
+  background-color:rgba(117, 98, 87, 1) ;
+  color:rgba(255, 255, 255, 1) ;
+  font-size: 18px;
+  font-weight: 700;
+  font-style: normal;
+  text-align: center;
+  line-height: 20px;
+  text-transform: uppercase;
+
+}
+.to-favorites {
+  background-color:rgba(131, 179, 211, 1) ;
+  color: rgba(255, 255, 255, 1) ;
+  font-size: 18px;
+  font-weight: 700;
+  font-style: normal;
+  text-align: center;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+.rating {
+  background-color:rgba(242, 242, 242, 1) ;
+  color: rgba(51, 51, 51, 1);
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+.pagination-show-more-section {
+  background-color:white ;
+}
+.pagination-show-more {
+  background-color:rgba(131, 179, 211, 1) ;
+  color: rgba(255, 255, 255, 1);
+  font-size: 20px;
+  font-weight: 700;
+  font-style: normal;
+  text-align: center;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+.pagination-link {
+  background-color: rgba(131, 179, 211, 1);
+  color: rgba(255, 255, 255, 1);
+  font-size: 20px;
+  font-weight: 700;
+  font-style: normal;
+  text-align: center;
+  line-height: 26px;
+  width: 55px;
+  height: 55px;
+  border-radius: 4px;
+  text-decoration: none;
+
+}
+.pagination-current {
+  background-color: rgba(242, 242, 242, 1);
+  color: #000000;
+  font-size: 20px;
+  font-weight: 700;
+  font-style: normal;
+  text-align: center;
+  line-height: 26px;
+  width: 55px;
+  height: 55px;
+  border-radius: 4px;
+}
+.number {
+  color: #000000;
+  font-size: 18px;
+  font-weight: 400;
+  font-style: regular;
+  text-decoration: none;
+  line-height: 23px;
+  text-align: left;
+
+}
+.pagination-show {
+  background-color: white;
+}
+.select-control-catalog {
+  color: rgba(51, 51, 51, 1);
+  font-size: 18px;
+  font-weight: 400;
+  font-style: regular;
+  text-decoration: none;
+  line-height: 23px;
+  text-align: left;
+
 }
 
+
+
+/*
+.navigation-menu{
+display: block;
+}
+*/
+/*
+.there-is-a-bridge {
+width: 400px;
+height: 384px;
+top: 1600px;
+left: 840px;
+}
+
+*/
+/* блок 1 размеры квадрат
+.real-town {
+  width: 400px;
+  height: 384px;
+  top: 832px;
+  left: 40px;
+  }
+  */
