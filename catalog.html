@@ -64,8 +64,10 @@
               <img src="images/layout/cataloge-page/main-new/house-main.svg" alt="знак домой" width="12" height="11">
             </a>
           </li>
+          <li class="breadcrumbs-item">
           <img src="images/layout/cataloge-page/main-new/arrow.svg" class="arrow-main-inner" alt="указывающий знак"
             width="5" height="7">
+          </li>
           <li class="breadcrumbs-item">
             <a class="breadcrumbs-link-hotels">Гостиницы</a>
           </li>
@@ -119,12 +121,19 @@
               </li>
             </ul>
           </fieldset>
-          <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
-            <button class="button-apply" type="submit">Применить</button>
-          </form>
-          <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
-            <button class="button-reset" type="submit">Сбросить</button>
-          </form>
+          <ul class="button-catalog-filter"
+            <li class="button-catalog-filter-1">
+              <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
+                <button class="button-apply" type="submit">Применить</button>
+              </form>
+            </li>
+            <li class="button-catalog-filter-2">
+              <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
+                <button class="button-reset" type="submit">Сбросить</button>
+              </form>
+            </li>
+          </ul>
+          </section>
         </section>
       </section>
 
@@ -135,14 +144,14 @@
           <option class="sorting-catalog-cheap" value="cheap">Сначала дешёвое</option>
           <option value="#">
             <a class="button-light" href="#">
-              <img class="card-menu" src="./images/layout/cataloge-page/main-new/menu-1.svg" alt="показать карточки"
+              <img class="card-menu" src="../1952385-sedona-33/images/layout/cataloge-page/main-new/menu-1.svg" alt="показать карточки"
                 width="16px" height="14px">
               <span class="visually-hidden">Показать карточки</span>
             </a>
           </option>
           <option value="#">
             <a class="button-light" href="#">
-              <img src="./images/layout/cataloge-page/main-new/menu-2.svg" alt="показать один вариант на странице"
+              <img src="../images/layout/cataloge-page/main-new/menu-2.svg" alt="показать один вариант на странице"
                 width="16px" height="14px">
               <span class="visually-hidden">Показать один вариант на странице</span>
             </a>
@@ -279,9 +288,9 @@
           честное бойскаутское!
         </p>
         <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
-          <label for="newsletter-email" class="newsletter-email">Ваш e-mail</label>
-          <input class="field" type="email" name="newsletter-email" id="newsletter-email" required>
-          <button class="button-newsletter-button" type="submit">
+          <!-- <label for="newsletter-email" class="newsletter-email">Ваш e-mail</label> -->
+          <input placeholder="Ваш e-mail" class="field" type="email" name="newsletter-email" id="newsletter-email" required>
+          <button class="button-newsletter" type="submit">
             <span class="subscribe">Подписаться</span>
           </button>
         </form>
