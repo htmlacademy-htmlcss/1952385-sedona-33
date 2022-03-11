@@ -10,36 +10,44 @@
 <body>
   <header class="page-heder">
     <nav class="navigation">
+
+
       <ul class="navigation-menu">
+
+
         <li class="menu-navigation-item-logo">
-          <a href="file:///C:/Users/Анна/Desktop/1952385-sedona-33/index.html" name="big-logo-sedona">
+          <a href="index.html" name="big-logo-sedona">
             <img class="logo-Sedona" src="images/layout/main-page/header-new/logo.jpg" width="139px" height="70px"
               alt="Логотип Седона"></a>
         </li>
+
+
         <li class="menu-navigation-item-list">
           <ul class="navigation-list-menu">
             <li class="navigation-item-menu">
-              <a class="navigation-link-menu navigation-link-current" href="catalog.html">Главная</a>
+              <a class="navigation-link-menu" href="index.html">Главная</a>
             </li>
             <li class="navigation-item-menu">
               <a class="navigation-link-menu" href="#">О Седоне</a>
             </li>
             <li class="navigation-item-menu">
-              <a class="navigation-link-menu" href="#">Гостиницы</a>
+              <a class="navigation-link-menu" href="catalog.html">Гостиницы</a>
             </li>
           </ul>
         </li>
+
+
         <li class="menu-navigation-right">
           <ul class="menu-navigation-list-right">
             <li class="navigation-item-right">
-              <a class="navigation-link" href="#">
+              <a class="navigation-link navigation-link-icon" href="#">
                 <img class="site-search" src="images/layout/main-page/header-new/search.svg" width="18px" height="18px"
                   alt="Поиск на сайте">
                 <span class="visually-hidden">Поиск</span>
               </a>
             </li>
             <li class="navigation-item-right">
-              <a class="navigation-link green" href="#">
+              <a class="navigation-link navigation-link-icon green" href="#">
                 <img class="liked-the-site" src="images/layout/main-page/header-new/favorite.svg" width="17px"
                   height="18px" alt="Понравилось на сайте">
                 <span class="visually-hidden">Понравилось</span>
@@ -59,7 +67,7 @@
 
       <section class="hight-images">
 
-        <img class="welcome-text" src="../1952385-sedona-33/images/layout/main-page/main-new/welcome-big.svg"
+        <img class="welcome-text" src="images/layout/main-page/main-new/welcome-big.svg"
           alt="добро пожаловать в Седону" width="458px" height="352px">
         <img class="bottom-main-page-background"
           src="images/layout/main-page/main-original/bottom-main-page-background.svg"
@@ -74,7 +82,7 @@
       <section class="description-title">
 
         <h2 class="description-title-causes">Седона — небольшой городок в Аризоне,
-          <br>
+          <!-- <br> -->
           заслуживающий большего!
         </h2>
         <p class="description-text-causes">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
@@ -209,8 +217,9 @@
           честное бойскаутское!
         </p>
         <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
-          <!-- <label for="newsletter-email" class="newsletter-email">Ваш e-mail</label> -->
-          <input placeholder="Ваш e-mail" class="field" type="email" name="newsletter-email" id="newsletter-email" required>
+          <label for="newsletter-email" class="visually-hidden newsletter-email">Ваш e-mail</label>
+          <input placeholder="Ваш e-mail" class="field" type="email" name="newsletter-email" id="newsletter-email"
+            required>
           <button class="button-newsletter" type="submit">
             <span class="subscribe">Подписаться</span>
           </button>
