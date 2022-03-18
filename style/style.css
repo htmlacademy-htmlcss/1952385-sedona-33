@@ -28,14 +28,13 @@ body {
   min-height: 100%;
   width: 1200px;
   margin: 0 auto;
+  list-style-type: none;
 
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 24px;
   background-color: #E5E5E5;
   color: black;
-
-  list-style-type: none;
 }
 
 .visually-hidden {
@@ -126,9 +125,15 @@ body {
   display: block;
   padding: 20px 17px;
 }
-.navigation-link-menu:hover {
+/* кнопка наведение */
+ .navigation-link-menu:hover {
   color: #756257;
 }
+/* кнопка при нажатии */
+ .navigation-link-menu:active {
+  color: rgba(117, 98, 87, 0.3);
+}
+
 
 .menu-navigation-right {
   margin-left: auto;
@@ -191,22 +196,18 @@ body {
   font-size: 8px;
   color: #FFFFFF;
 }
-.navigation-link-icon:hover {
+/* кнопка при наведении */
+.navigation-link-icon:hover path {
   fill: #756257;
 }
-.site-search:hover {
-  /* fill: #756257; */
-}
-.liked-the-site:hover {
-
-}
-path .d {
-  fill: #000;
+/* кнопка при нажатии  */
+.navigation-link-icon:active path {
+  fill: rgba(117, 98, 87, 0.3);
 }
 
 .navigation-item-right-button {
   width: 160px;
-  font-family: inherit;
+
   font-size: 16px;
   line-height: 37px;
   font-weight: 700;
@@ -223,9 +224,53 @@ path .d {
   cursor: pointer;
   display: block;
   /* padding: 9px 15px 8px 15px; */
-
 }
 
+
+/* кнопка при наведении */
+.navigation-item-right-button:hover {
+  color: #ffffff;
+  background-color:rgba(97, 80, 72, 1);
+}
+
+
+/* кнопка при нажатии */
+.navigation-item-right-button:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color:rgba(97, 80, 72, 1);
+}
+
+
+/* фокус кнопки */
+.navigation-item-right-button:focus {
+
+  color: rgba(255, 255, 255, 1);
+  background-color:rgba(97, 80, 72, 1);
+  border: 3px solid #83B3D3;
+  border-radius: 4px;
+  list-style-type: none;
+}
+
+
+/* при посещении ссылок */
+.navigation-item-right-button:visited {
+  width: 160px;
+  font-size: 16px;
+  line-height: 37px;
+  font-weight: 700;
+  text-align: center;
+  color: #ffffff;
+  background-color: #756257;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 4px;
+  list-style-type: none;
+  margin-left: 20px;
+  font-family: "PT Sans", sans-serif;
+  cursor: pointer;
+  display: block;
+}
 
 
 /* ---------------------------------------------------------------------------main-----------------------*/
@@ -496,6 +541,23 @@ path .d {
   width: 575px;
   /* height: 60px; */
 }
+.search-hotel-item-button:hover {
+background-color: rgba(97, 80, 72, 1);
+}
+.search-hotel-item-button:active {
+  background-color: rgba(97, 80, 72, 1);
+  fill: rgba(255, 255, 255, 1);
+  }
+.search-hotel-item-button:focus {
+    background-color: #615048;
+    border: 3px solid #83B3D3;
+    box-sizing: border-box;
+    border-radius: 10px;
+    }
+.search-hotel-item-button:visited {
+  background-color: rgba(117, 98, 87, 1);
+  fill: rgba(255, 255, 255, 1);
+      }
 
 /* ----------подпишись на рассылку */
 .subscribe-to-the-newsletter {
@@ -553,6 +615,7 @@ path .d {
   border-radius: 10px 0px 0px 10px;
 }
 
+
 .field::placeholder {
   font-family: "PT Sans", sans-serif;
   font-weight: 400;
@@ -560,7 +623,29 @@ path .d {
   font-size: 18px;
   line-height: 26px;
   color: rgba(0, 0, 0, 0.6);
+  border-radius: 10px 0px 0px 10px;
 }
+/*
+.field:hover {
+background-color:#E6E6E6;
+border-radius: 10px 0px 0px 10px;
+
+  }
+
+.field:focus {
+background-color: #E6E6E6;
+border: 3px solid #83B3D3;
+border-radius: 10px 0px 0px 10px;
+
+}
+.field:active {
+fill: rgba(255, 255, 255, 1) ;
+background-color: rgba(104, 162, 202, 1);
+}
+.subscribe:active {
+  color: rgba(255, 255, 255, 1) ;
+  } */
+
 
 .button-newsletter {
   background-color: rgba(131, 179, 211, 1);
@@ -572,6 +657,22 @@ path .d {
   border: none;
   cursor: pointer;
   display: block;
+}
+.button-newsletter:hover {
+background-color: rgba(104, 162, 202, 1);
+border-radius: 0 10px 10px 0;
+}
+.button-newsletter:focus {
+  background-color: rgba(104, 162, 202, 1);
+border: 3px solid rgba(117, 98, 87, 1);
+border-radius: 0px 10px 10px 0px;
+  }
+.button-newsletter:active {
+
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(104, 162, 202, 1);
+  border: #68A2CA;
+  border-radius: 0px 10px 10px 0px;
 }
 
 .subscribe {
@@ -625,11 +726,44 @@ path .d {
 
 .footer-social-item {
   list-style-type: none;
+  width: 40px;
+  height: 40px;
+}
+/* при наведении */
+.footer-social-item:hover {
+  fill: #68A2CA;
+
+}
+.footer-social-item:focus {
+border: 3px solid #83B3D3;
+/* box-sizing: border-box; */
+border-radius: 10px;
+padding: 0 10px;
+
+}
+.footer-social-item:active {
+fill: rgba(104, 162, 202, 1);
 }
 
 .footer-phone {
   max-width: 720px;
   margin: 0 auto;
+}
+/* при наведении */
+.contacts-phone:hover {
+  color: rgba(117, 98, 87, 1);
+
+}
+.contacts-phone:focus {
+  border: 3px solid #83B3D3;
+  box-sizing: border-box;
+  border-radius: 10px;
+  padding:0 10px;
+  color: rgba(117, 98, 87, 1);
+
+}
+.footer-phone:active {
+color: rgba(117, 98, 87, 1);
 }
 
 .contacts-phone {
@@ -650,6 +784,22 @@ path .d {
 .footer-contacts-logo {
   width: 114px;
   height: 32px;
+}
+.footer-contacts-logo:hover {
+fill: rgba(117, 98, 87, 1);
+
+}
+.footer-contacts-logo:active {
+fill: rgba(117, 98, 87, 1);
+
+}
+.footer-contacts-logo:focus {
+  border: 3px solid #83B3D3;
+  box-sizing: border-box;
+  border-radius: 10px;
+  fill: rgba(117, 98, 87, 1);
+  padding: 0 10px;
+
 }
 
 .visually-hidden {
@@ -1109,7 +1259,7 @@ path .d {
   font-weight: 700;
   font-style: normal;
   text-align: center;
-  line-height: 21px
+  line-height: 21px;
   border: none;
   cursor: pointer;
   display: block;
