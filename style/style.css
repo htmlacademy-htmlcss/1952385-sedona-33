@@ -324,11 +324,12 @@ body {
 
 /* -------------------секция с заголовком */
 .description-title {
-  display: block;
+  display: flex;
   width: 1200px;
   height: 282px;
   padding-top: 63px;
   position: relative;
+  justify-content: center;
 }
 
 .description-title-causes {
@@ -347,10 +348,10 @@ body {
   flex-wrap: nowrap;
   flex-direction: column;
 
-  width: 650px;
+  width: 700px;
   position: absolute;
-  top: 63px;
-  left: 240px;
+  /* top: 63px;
+  left: 240px; */
   margin: 0 auto;
 }
 
@@ -395,6 +396,7 @@ body {
   padding: 0;
   margin: 0;
   list-style-type: none;
+  /* margin-top: 80px; */
 }
 
 .advantages-item {
@@ -625,23 +627,31 @@ background-color: rgba(97, 80, 72, 1);
   color: rgba(0, 0, 0, 0.6);
   border-radius: 10px 0px 0px 10px;
 }
-/*
-.field:hover {
-background-color:#E6E6E6;
-border-radius: 10px 0px 0px 10px;
 
+.field:hover {
+border-radius: 10px 0px 0px 10px;
+background: rgba(230, 230, 230, 1);
   }
 
 .field:focus {
 background-color: #E6E6E6;
 border: 3px solid #83B3D3;
 border-radius: 10px 0px 0px 10px;
+outline: none;
+}
 
+.field:invalid {
+background-color:#FFFFFF ;
+ border: 2px solid #FF5757;
+ box-sizing: border-box;
 }
-.field:active {
-fill: rgba(255, 255, 255, 1) ;
-background-color: rgba(104, 162, 202, 1);
-}
+/* input:valid {
+  background-color:#FFFFFF ;
+border: 2px solid #57ff57;
+box-sizing: border-box;
+border-radius: 10px 0px 0px 10px;
+ } */
+/*
 .subscribe:active {
   color: rgba(255, 255, 255, 1) ;
   } */
@@ -668,7 +678,6 @@ border: 3px solid rgba(117, 98, 87, 1);
 border-radius: 0px 10px 10px 0px;
   }
 .button-newsletter:active {
-
   color: rgba(255, 255, 255, 1);
   background-color: rgba(104, 162, 202, 1);
   border: #68A2CA;
@@ -859,6 +868,86 @@ fill: rgba(117, 98, 87, 1);
   padding: 0;
   display: flex;
   margin: 0 10px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* кнопка при нажатии */
+.breadcrumbs-item:active {
+  fill: rgba(255, 255, 255, 1);
+  color: rgba(255, 255, 255, 1);
+  opacity: 30%;
+}
+
+
+/* фокус кнопки */
+.breadcrumbs-catalog:focus {
+/* border: 3px solid #83B3D3; */
+border-radius: 4px;
+/* outline: none; */
+color: rgba(255, 255, 255, 1);
+fill: rgba(255, 255, 255, 1);
+}
+
+/* наведение кнопки */
+.breadcrumbs-catalog:hover {
+  fill: rgba(255, 255, 255, 1);
+  color: rgba(255, 255, 255, 1);
+  opacity: 60%;
+}
+.breadcrumbs-catalog:active {
+  fill: rgba(255, 255, 255, 1);
+  color: rgba(255, 255, 255, 1);
+  opacity: 30%;
+}
+
+.arrow-main-inner:hover{
+  fill: rgba(255, 255, 255, 1);
+  opacity: 60%;
+}
+.arrow-main-inner:active{
+  fill: rgba(255, 255, 255, 1);
+  opacity: 60%;
+}
+.arrow-main-inner:focus{
+  fill: rgba(255, 255, 255, 1);
+  opacity: 60%;
 }
 
 .breadcrumbs-item a {
@@ -883,6 +972,18 @@ fill: rgba(117, 98, 87, 1);
   padding: 0;
   margin: 0 auto;
 }
+.arrow-main-inner:hover{
+fill: rgba(255, 255, 255, 1);
+opacity: 60%;
+}
+.arrow-main-inner:active{
+  fill: rgba(255, 255, 255, 1);
+  opacity: 60%;
+  }
+.arrow-main-inner:focus{
+  fill: rgba(255, 255, 255, 1);
+  opacity: 60%;
+  }
 
 .breadcrumbs-link-hotels {
   font-family: "PT Sans", sans-serif;
@@ -1178,6 +1279,15 @@ fill: rgba(117, 98, 87, 1);
 .product-card-image {
   padding: 0;
   margin: 0 auto;
+}
+.product-card-image:hover {
+  opacity: 60%;
+}
+.product-card-image:focus {
+  border: 3px solid #83B3D3;
+}
+.product-card-image:active {
+  opacity: 30%;
 }
 
 .product-card-title {
