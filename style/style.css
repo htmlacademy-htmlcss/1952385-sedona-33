@@ -162,6 +162,15 @@ body {
   list-style-type: none;
 }
 
+.navigation-link-current::before {
+  /* position: relative; */
+  right: 20px;
+  bottom: 0;
+  left: 20px;
+  height: 50px;
+  background-color: rgba(117, 98, 87, 1);
+  content: "";
+}
 .navigation-link-icon {
   display: block;
   padding: 12px;
@@ -549,6 +558,7 @@ background-color: rgba(97, 80, 72, 1);
 .search-hotel-item-button:active {
   background-color: rgba(97, 80, 72, 1);
   fill: rgba(255, 255, 255, 1);
+  color: rgba(255, 255, 255, 0.3);
   }
 .search-hotel-item-button:focus {
     background-color: #615048;
@@ -605,6 +615,67 @@ background-color: rgba(97, 80, 72, 1);
   display: flex;
 }
 
+.newsletter-form input {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  color: #000000;
+  background-color: rgba(242, 242, 242, 1);
+  height: 60px;
+  width: 600px;
+  margin: 0;
+  padding: 0 22px;
+  border: 3px solid transparent;
+  background: #F2F2F2;
+  border-radius: 10px 0px 0px 10px;
+  box-sizing: border-box;
+  outline: none;
+}
+.newsletter-form input::placeholder {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  /* padding-left: 22px; */
+  font-size: 18px;
+  line-height: 26px;
+  color: rgba(0, 0, 0, 0.6);
+  /* border-radius: 10px 0px 0px 10px; */
+}
+
+.newsletter-form input:hover {
+  /* border-radius: 10px 0px 0px 10px; */
+  background-color: rgba(230, 230, 230, 1);
+  }
+
+  .newsletter-form input:focus {
+  background-color: #E6E6E6;
+  border: 3px solid #83B3D3;
+  /* border-radius: 10px 0px 0px 10px; */
+  /* outline: none; */
+  }
+.newsletter-form input:invalid {
+  background-color: rgba(255, 255, 255, 1);
+  border: 2px solid #FF5757;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
 .field {
   font-family: "PT Sans", sans-serif;
   background-color: rgba(242, 242, 242, 1);
@@ -644,7 +715,7 @@ outline: none;
 background-color:#FFFFFF ;
  border: 2px solid #FF5757;
  box-sizing: border-box;
-}
+} */
 /* input:valid {
   background-color:#FFFFFF ;
 border: 2px solid #57ff57;
@@ -670,19 +741,25 @@ border-radius: 10px 0px 0px 10px;
 }
 .button-newsletter:hover {
 background-color: rgba(104, 162, 202, 1);
-border-radius: 0 10px 10px 0;
+/* border-radius: 0 10px 10px 0; */
 }
 .button-newsletter:focus {
-  background-color: rgba(104, 162, 202, 1);
+background-color: rgba(104, 162, 202, 1);
 border: 3px solid rgba(117, 98, 87, 1);
-border-radius: 0px 10px 10px 0px;
+/* border-radius: 0px 10px 10px 0px; */
   }
 .button-newsletter:active {
-  color: rgba(255, 255, 255, 1);
+  color: rgba(255, 255, 255, 0.3);
+/* не делается прозрачным */
   background-color: rgba(104, 162, 202, 1);
-  border: #68A2CA;
-  border-radius: 0px 10px 10px 0px;
+  /* border: #68A2CA; */
+  /* border-radius: 0px 10px 10px 0px; */
 }
+.button-newsletter:active .subscribe {
+  color: rgba(255, 255, 255, 1);
+  opacity: 30%;
+}
+
 
 .subscribe {
   font-family: "PT Sans", sans-serif;
@@ -739,20 +816,24 @@ border-radius: 0px 10px 10px 0px;
   height: 40px;
 }
 /* при наведении */
-.footer-social-item:hover {
-  fill: #68A2CA;
+ .footer-social-item a:hover {
+  fill: rgba(104, 162, 202, 1);
 
 }
-.footer-social-item:focus {
+.footer-social-item a:focus  {
 border: 3px solid #83B3D3;
-/* box-sizing: border-box; */
+ box-sizing: border-box;
 border-radius: 10px;
-padding: 0 10px;
+padding: 5px 10px;
 
 }
-.footer-social-item:active {
+
+.footer-social-item a:active {
 fill: rgba(104, 162, 202, 1);
+fill-opacity: 30%;
 }
+
+
 
 .footer-phone {
   max-width: 720px;
@@ -761,7 +842,6 @@ fill: rgba(104, 162, 202, 1);
 /* при наведении */
 .contacts-phone:hover {
   color: rgba(117, 98, 87, 1);
-
 }
 .contacts-phone:focus {
   border: 3px solid #83B3D3;
@@ -771,8 +851,8 @@ fill: rgba(104, 162, 202, 1);
   color: rgba(117, 98, 87, 1);
 
 }
-.footer-phone:active {
-color: rgba(117, 98, 87, 1);
+.footer-phone a:active {
+  color: rgba(117, 98, 87, 0.3);
 }
 
 .contacts-phone {
@@ -794,22 +874,36 @@ color: rgba(117, 98, 87, 1);
   width: 114px;
   height: 32px;
 }
-.footer-contacts-logo:hover {
-fill: rgba(117, 98, 87, 1);
 
-}
-.footer-contacts-logo:active {
-fill: rgba(117, 98, 87, 1);
 
+.footer-logo-html svg:hover {
+  fill: rgba(117, 98, 87, 1);
+  fill-opacity: 60%;
 }
+
+ .footer-contacts-logo:active {
+  fill: rgba(117, 98, 87, 1);
+  fill-opacity: 30%;
+}
+
 .footer-contacts-logo:focus {
   border: 3px solid #83B3D3;
   box-sizing: border-box;
   border-radius: 10px;
-  fill: rgba(117, 98, 87, 1);
-  padding: 0 10px;
+  padding:0 10px;
+  color: rgba(117, 98, 87, 1);
+  outline: none;
 
+  width: 140px;
+  height: 60px;
+  display: block;
+  align-items: center;
+
+  padding: 10px;
 }
+
+
+
 
 .visually-hidden {
   display: none;
@@ -870,85 +964,62 @@ fill: rgba(117, 98, 87, 1);
   margin: 0 10px;
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* кнопка при нажатии */
-.breadcrumbs-item:active {
-  fill: rgba(255, 255, 255, 1);
-  color: rgba(255, 255, 255, 1);
-  opacity: 30%;
-}
-
-
-/* фокус кнопки */
-.breadcrumbs-catalog:focus {
-/* border: 3px solid #83B3D3; */
-border-radius: 4px;
-/* outline: none; */
-color: rgba(255, 255, 255, 1);
-fill: rgba(255, 255, 255, 1);
-}
-
-/* наведение кнопки */
-.breadcrumbs-catalog:hover {
-  fill: rgba(255, 255, 255, 1);
-  color: rgba(255, 255, 255, 1);
-  opacity: 60%;
-}
-.breadcrumbs-catalog:active {
-  fill: rgba(255, 255, 255, 1);
-  color: rgba(255, 255, 255, 1);
-  opacity: 30%;
-}
-
 .arrow-main-inner:hover{
   fill: rgba(255, 255, 255, 1);
   opacity: 60%;
+  outline: none;
 }
 .arrow-main-inner:active{
   fill: rgba(255, 255, 255, 1);
   opacity: 60%;
+  outline: none;
 }
 .arrow-main-inner:focus{
   fill: rgba(255, 255, 255, 1);
   opacity: 60%;
+  outline: none;
 }
+
+
+.breadcrumbs-catalog a:hover {
+  fill: rgba(255, 255, 255, 1);
+  opacity: 60%;
+}
+
+.breadcrumbs-catalog .breadcrumbs-link-hotels:focus {
+  border: 3px solid #83B3D3;
+  box-sizing: border-box;
+  border-radius: 10px;
+  color: rgba(255, 255, 255, 1);
+  outline: none;
+}
+.breadcrumbs-item.breadcrumbs-catalog.breadcrumbs-house-directory:focus {
+  border: 3px solid #83B3D3;
+  box-sizing: border-box;
+  border-radius: 4px;
+  width: 28px;
+  height: 27px;
+  padding-top: 2.5%;
+
+}
+.breadcrumbs-item.breadcrumbs-catalog.breadcrumbs-house-directory:active {
+  fill: rgba(255, 255, 255, 1);
+  opacity: 30%;
+  outline: none;
+}
+.breadcrumbs-catalog .breadcrumbs-link-hotels:active {
+  color: rgba(255, 255, 255, 1);
+  opacity: 30%;
+  outline: none;
+}
+
+
+
+
+
+
+
+
 
 .breadcrumbs-item a {
   text-decoration: none;
@@ -1096,9 +1167,53 @@ opacity: 60%;
   text-align: center;
   vertical-align: center;
   text-transform: uppercase;
+  border-radius: 4px;
 
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.button-apply:hover{
+background-color:rgba(104, 162, 202, 1);
+border-radius: 4px;
+}
+.button-apply:focus{
+  background-color: rgba(104, 162, 202, 1);
+  border: 3px solid #FFFFFF;
+  border-radius: 4px;
+
+}
+.button-apply:active{
+
+  background-color: rgba(104, 162, 202, 1);
+color: rgba(255, 255, 255, 0.3);
+}
+
+
+
+
+
+
+
+
+
+
+
 
 .button-catalog-filter-2 {
   border: none;
@@ -1163,6 +1278,20 @@ opacity: 60%;
   width: 287px;
   height: 48px;
 }
+.sorting-catalog:hover {
+  border: 2px solid #83B3D3;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+.sorting-catalog:focus {
+  border: 2px solid #83B3D3;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+.sorting-catalog:active {
+  border-color: rgba(230, 230, 230, 1);
+  color: rgba(51, 51, 51, 0.3);
+}
 
 .sorting-catalog-cheap {
 
@@ -1220,6 +1349,49 @@ opacity: 60%;
 .sorting-location-item-2:nth-child(3) {
   margin: 0;
 }
+.sorting-location-link:hover {
+border: 2px solid rgba(131, 179, 211, 1);
+}
+.sorting-location-link:focus {
+border: 2px solid rgba(131, 179, 211, 1);
+}
+.sorting-location-link:active {
+  border: 2px solid #000000;
+ }
+
+
+
+
+
+
+
+
+
+.sorting-location-item-2:hover {
+  border: 2px solid #83B3D3;
+  box-sizing: border-box;
+  border-radius: 4px;
+  outline: none;
+}
+
+.sorting-location-item-2:focus {
+
+}
+
+.sorting-location-item-2:active {
+
+}
+
+
+
+
+
+
+
+
+
+
+
 
 /* ---------элементы страницы */
 .element-directory {
@@ -1396,6 +1568,24 @@ padding: 9px 0 10px;
   margin-left: 20px;
 }
 
+
+
+.more:hover {
+  background-color: rgba(97, 80, 72, 1);
+  color: rgba(255, 255, 255, 1);
+}
+.more:active {
+  background-color: rgba(97, 80, 72, 1);
+  color: rgba(255, 255, 255, 0.3);
+}
+.more:focus {
+  background-color: rgba(97, 80, 72, 1);
+  color: rgba(255, 255, 255, 1);
+  border: 3px solid #83B3D3;
+}
+
+
+
 .to-favorites {
   background-color: rgba(131, 179, 211, 1);
   color: rgba(255, 255, 255, 1);
@@ -1413,6 +1603,21 @@ padding: 9px 0 10px;
   list-style-type: none;
   margin-left: 20px;
 }
+
+.to-favorites:hover {
+  background-color: rgba(104, 162, 202, 1);
+  color: rgba(255, 255, 255, 1);
+}
+.to-favorites:active {
+  background-color: rgba(104, 162, 202, 1);
+  color: rgba(255, 255, 255, 0.3);
+}
+.to-favorites:focus {
+  background-color: rgba(104, 162, 202, 1);
+  color: rgba(255, 255, 255, 1);
+  border: 3px solid rgba(117, 98, 87, 1);
+}
+
 
 .stars {
   width: 91px;
@@ -1457,6 +1662,20 @@ padding: 9px 0 10px;
 }
 .green-button {
   background-color: rgba(125, 181, 79, 1);
+}
+
+.green-button:hover {
+  background-color: rgba(108, 158, 66, 1);
+  color: rgba(255, 255, 255, 1);
+}
+.green-button:active {
+  background-color: rgba(108, 158, 66, 1);
+  color: rgba(255, 255, 255, 0.3);
+}
+.green-button:focus {
+  background-color: rgba(108, 158, 66, 1);
+  color: rgba(255, 255, 255, 1);
+  border: 3px solid rgba(117, 98, 87, 1);
 }
 
 /* -----рейтинг в карте товара*/
@@ -1545,6 +1764,21 @@ padding: 9px 0 10px;
   justify-content: center;
   align-items: center;
 }
+.pagination-item:hover {
+background-color: rgba(104, 162, 202, 1);
+}
+.pagination-item:focus {
+  background-color: rgba(104, 162, 202, 1);
+  border: 3px solid #756257;
+}
+.pagination-item:active {
+  background-color:  rgba(104, 162, 202, 1);
+  color:rgba(255, 255, 255, 0.3);
+}
+/* .pagination-item .pagination-link:active {
+  background-color:  rgba(242, 242, 242, 1);
+  color:rgba(0, 0, 0, 1);
+} */
 
 .pagination-item-current {
   background-color: rgba(242, 242, 242, 1);
