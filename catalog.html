@@ -89,30 +89,32 @@
 
         <section class="catalog-hotels">
           <h2 class="visually-hidden">Список гостиниц с фильтрами</h2>
+
           <fieldset class="catalog-filter-group">
             <legend class="catalog-filter-title">Инфраструктура:</legend>
             <form action="https://echo.htmlacademy.ru/" method="get" >
             <ul class="catalog-filter-list catalog-filter-list-checkbox">
               <li class="catalog-filter-item">
                 <label class="control-label control">
-                  <input class="control-input" type="checkbox" name="swimming-pool" checked>
-                  Бассейн
+                  <input class="control-input checkbox" type="checkbox" name="swimming-pool" checked>
+                  <span>Бассейн</span>
                 </label>
               </li>
               <li class="catalog-filter-item">
                 <label class="control">
-                  <input class="control-input" type="checkbox" name="parking" checked>
-                  Парковка
+                  <input class="control-input checkbox" type="checkbox" name="parking" checked>
+                  <span>Парковка</span>
+
                 </label>
               </li>
               <li class="catalog-filter-item">
                 <label class="control">
-                  <input class="control-input" type="checkbox" name="Wi-Fi">
-                  Wi-Fi
+                  <input class="control-input checkbox" type="checkbox" name="Wi-Fi">
+                  <span>Wi-Fi</span>
                 </label>
               </li>
             </ul>
-          </form>
+            </form>
           </fieldset>
 
           <fieldset class="catalog-filter-group-2">
@@ -120,19 +122,19 @@
           <form action="https://echo.htmlacademy.ru/" method="get" >
             <ul class="catalog-filter-list">
               <li class="catalog-filter-item">
-                <label class="control">
+                <label class="control-2">
                   <input class="control-input" type="radio" name="residence" checked>
                   Гостиница
                 </label>
               </li>
               <li class="catalog-filter-item">
-                <label class="control">
+                <label class="control-2">
                   <input class="control-input" type="radio" name="residence">
                   Мотель
                 </label>
               </li>
               <li class="catalog-filter-item">
-                <label class="control">
+                <label class="control-2">
                   <input class="control-input" type="radio" name="residence">
                   Апартаменты
                 </label>
@@ -140,6 +142,39 @@
             </ul>
           </form>
           </fieldset>
+
+           <fieldset class="catalog-filter-group-3">
+            <legend class="catalog-filter-title">Стоимость, ₽:</legend>
+            <div class="range-scale button-catalog-filter-range">
+              	<div class="range">
+					  <div class="range-wrapper-inputs">
+						<div class="range-wrapper-input range-wrapper-input-left">
+							<label class="catalog-filter-label" for="range-from"> </label>
+							<input class="range-input" id="range-from" type="number" value="0" name="min-price">
+              <span class="from-to">от</span>
+						</div>
+						<div class="range-wrapper-input range-wrapper-input-right">
+							<label class="catalog-filter-label" for="range-to"></label>
+			    		<input class="range-input" id="range-to" type="number" value="9000" name="max-price" style="width: 51px">
+              <span class="from-to">до</span>
+						</div>
+					  </div>
+					  <div class="range-bar" style="width: 267px">
+						<button class="range-toggle toggle-min">
+							<span class="visually-hidden">Изменить минимальную цену.</span>
+						</button>
+						<button class="range-toggle toggle-max">
+							<span class="visually-hidden">Изменить максимальную цену.</span>
+						</button>
+					  </div>
+				    </div>
+
+            </div>
+          </fieldset>
+
+
+
+
 
 
           <ul class="button-catalog-filter"
@@ -167,11 +202,37 @@
             <h2 class="hotels-found">Найдено гостиниц: 38</h2>
           </div>
 
-          <div class="sorting-location-item">
+          <!-- <div class="sorting-location-item">
             <select class="sorting-catalog" aria-label="Сортировка">
               <option class="sorting-catalog-cheap" value="cheap">Сначала дешёвое</option>
             </select>
-          </div>
+          </div> -->
+
+
+
+
+              <div class= "sorting-location-item">
+                <select class="sorting-catalog" aria-label="Сортировка">
+
+                  <option class="sorting-catalog-cheap" value="cheap">Сначала дешёвое</option>
+
+                </select>
+              </div>
+
+
+              <!-- <div class="catalog-right-column">
+
+                <div class="sorting-container">
+                  <div class= "select sorting-type">
+                    <select class="select-control" aria-label="Сортировка">
+                      <option value="popular">Сначала популярное</option>
+                      <option value="cheap">Сначала дешёвое</option>
+                      <option value="expensive">Сначала дорогое</option>
+                    </select>
+                  </div>
+                -->
+
+
 
           <div class="sorting-location-item">
 
@@ -435,7 +496,7 @@
         </p>
         <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
           <label class="newsletter-email" aria-label="Ваш e-mail">
-            <input placeholder="Ваш e-mail" class="field" type="email" name="newsletter-email" required>
+            <input placeholder="Ваш e-mail" class="field" type="email" name="newsletter-email">
           </label>
 
           <button class="button-newsletter" type="submit">
